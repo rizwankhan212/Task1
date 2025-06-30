@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Welcome to your Dashboard , {{ current_user.firstName }} {{ current_user.lastName }}!!</h2>
+    <p>Your Date of Birth is {{ current_user.DOB.strftime('%d-%m-%Y') }}</p>
+    <p>This is a protected route. You can only see this if you are logged in.</p>
+{% endblock %}
